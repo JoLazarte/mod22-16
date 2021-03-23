@@ -15,7 +15,7 @@ const puedeGraduarse = (asistencia, materiasAprobadas,
 */
 const puedeGraduarse = (asistencia, materiasAprobadas, 
     tesisAprobada) => asistencia >= 75 && materiasAprobadas >= 50 &&
-    tesisAprobada === true;
+    tesisAprobada;
 
 console.log(puedeGraduarse(80, 50, true));  
 console.log(puedeGraduarse(80, 50, false));

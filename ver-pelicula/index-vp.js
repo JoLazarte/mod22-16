@@ -35,3 +35,25 @@ if (miraPeli === true) {
     alert("No puede ver película");
 }; 
 
+
+/*
+const puedeVerPelicula = (edad, tieneAutorizacion) =>
+edad >= 15 || tieneAutorizacion;
+
+const edad = Number(prompt('ingrese la edad'));
+//   let autorizacion = confirm('tiene autorizacion?');
+let autorizacion = prompt('tiene autorizacion?');
+
+if (autorizacion == 'si') {
+autorizacion = true;
+} else {
+autorizacion = false;
+}
+
+alert(puedeVerPelicula(edad, autorizacion));
+
+console.log(puedeVerPelicula(12, false)); // false
+console.log(puedeVerPelicula(12, true)); // true
+console.log(puedeVerPelicula(16, false)); // true
+console.log(puedeVerPelicula(18, true)); // true
+*/
