@@ -25,7 +25,10 @@ if (arr.length == 5
        
         return false;
     
-}};   
+}};  
+
+console.log(esHoraValida('19:60')); // true
+console.log(esHoraValida('21:69')); // true
 console.log(esHoraValida('19:60')); // true
 console.log(esHoraValida('12:23')); // true
 console.log(esHoraValida('12:65')); // false
@@ -43,5 +46,7 @@ console.log(esHoraValida('000000')); // false
 console.log(esHoraValida('Mandy')); // false
 console.log(esHoraValida('Hh:Mm')); // false
 console.log(esHoraValida('-00:60')); // false
+
+console.log(esHoraValida('37:60')); // 
 
 

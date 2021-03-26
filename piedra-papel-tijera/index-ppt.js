@@ -1,6 +1,7 @@
 const playerOne = prompt("Elija piedra, papel o tijera");
 const playerTwo = prompt("Elija piedra, papel o tijera");
 
+/*
 const rock = (handOne, handTwo) => {
     if (handOne == "piedra" && handTwo == "piedra") {
         alert("Empate");
@@ -36,4 +37,16 @@ const rockPaperScissor = (a, b) => {
     paper(a, b);
     scissor(a, b);
 };
+*/
+const rockPaperScissor = (jugadorA,jugardorB)=>{
+    if(jugadorA == jugardorB){
+      return "¡Empate!"
+    }else if(jugadorA == "tijera" && jugardorB =="papel" || jugadorA == "papel" && jugardorB=="tijera"){
+      return "¡Ganó tijera!"
+    }else if(jugadorA == "tijera" && jugardorB =="piedra" || jugadorA == "piedra" && jugardorB=="tijera"){
+      return "¡Ganó piedra!"
+    }else if(jugadorA == "papel" && jugardorB =="piedra" || jugadorA == "piedra" && jugardorB=="papel"){
+      return "¡Ganó papel!"
+    }
+  }
 const game = rockPaperScissor(playerOne, playerTwo);
