@@ -38,14 +38,14 @@ const rockPaperScissor = (a, b) => {
     scissor(a, b);
 };
 */
-const rockPaperScissor = (jugadorA,jugardorB)=>{
-    if(jugadorA == jugardorB){
+const rockPaperScissor = (HandOne,HandTwo)=>{
+    if(HandOne == HandTwo){
       return "¡Empate!"
-    }else if(jugadorA == "tijera" && jugardorB =="papel" || jugadorA == "papel" && jugardorB=="tijera"){
+    }else if(HandOne == "tijera" && HandTwo =="papel" || jugadorA == "papel" && jugardorB=="tijera"){
       return "¡Ganó tijera!"
-    }else if(jugadorA == "tijera" && jugardorB =="piedra" || jugadorA == "piedra" && jugardorB=="tijera"){
+    }else if(HandOne == "tijera" && HandTwo =="piedra" || jugadorA == "piedra" && jugardorB=="tijera"){
       return "¡Ganó piedra!"
-    }else if(jugadorA == "papel" && jugardorB =="piedra" || jugadorA == "piedra" && jugardorB=="papel"){
+    }else if(HandOne == "papel" && HandTwo =="piedra" || jugadorA == "piedra" && jugardorB=="papel"){
       return "¡Ganó papel!"
     }
   }
